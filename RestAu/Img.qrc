@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/Iconos/iconfinder_142-man-cook-2_3099395.png</file>
+        <file>img/Iconos/iconfinder_person_3_1376034.png</file>
+        <file>img/Iconos/Waiter_Male_Dark.png</file>
+        <file>img/Iconos/Waiter_Male_Light.png</file>
+        <file>img/Iconos/logo.jpeg</file>
+        <file>img/Iconos/logosinfondo.png</file>
+        <file>img/Iconos/lupa.png</file>
+        <file>img/Iconos/trabajando (1).png</file>
+        <file>img/Iconos/salida.png</file>
+        <file>img/Iconos/editar.png</file>
+        <file>img/Iconos/hot-cakes-tradicionales.png</file>
+        <file>img/Iconos/descargar.jpg</file>
+        <file>img/Iconos/Tortitas-avena-y-plátano-YouTube.jpg</file>
+        <file>img/Iconos/inventario.png</file>
+        <file>img/Iconos/logosinfondo1.png</file>
+        <file>img/Iconos/anadir.png</file>
+        <file>img/Iconos/hot-cakes-con-miel-y-frutos-rojos.png</file>
+        <file>img/Iconos/pan.png</file>
+        <file>img/Iconos/ojo.png</file>
+        <file>img/Iconos/regresar.png</file>
+        <file>img/Iconos/tostadas-francesas-canela.png</file>
+        <file>img/Iconos/reserva-de-mesa.png</file>
+        <file>img/Iconos/cupcakes.png</file>
+        <file>img/Iconos/platillos-png.png</file>
+        <file>img/Iconos/mesa.png</file>
+        <file>img/Iconos/semaforos.png</file>
+        <file>img/Iconos/iconfinder_My_order_6457548.png</file>
+        <file>img/Iconos/codigobarras.jfif</file>
+        <file>img/Iconos/plato.png</file>
+        <file>img/Iconos/menu.jpg</file>
+        <file>img/Iconos/proceso.png</file>
+        <file>img/Iconos/terminado.png</file>
+    </qresource>
+</RCC>

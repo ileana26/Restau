@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InicioSesion</class>
+ <widget class="QMainWindow" name="InicioSesion">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>554</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>InicioSesion</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>12</y>
+      <width>531</width>
+      <height>441</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QWidget{
+	background-color: #0B253A
+}
+
+QLabel{
+	font:&quot;CaviarDreams_BoldItalic&quot;;
+	color:#0B253A;
+
+}
+
+QLineEdit{
+	background-color:white;
+}
+
+QLineEdit:Hover{
+	border: 2px solid rgb(77,188,198)
+}
+
+QRadioButton{
+	border: none;
+	color:#0B253A;
+font:11pt  &quot;CaviarDreams_BoldItalic&quot;;
+}
+
+</string>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>100</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>491</width>
+       <height>381</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	background-color: #C0C4CF;
+}
+</string>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>250</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font:12pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string> Contraseña: </string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>180</y>
+         <width>21</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font:12pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+       </property>
+       <property name="text">
+        <string>ID:</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="Contrasena">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>270</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 10);
+font:12pt  &quot;CaviarDreams_BoldItalic&quot;;
+border: 1px solid #0B253A;;
+    border-radius:10px;
+    padding: 0 8px;</string>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>90</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font:12pt  &quot;CaviarDreams_BoldItalic&quot;;
+color:#0B253A;
+}</string>
+       </property>
+       <property name="text">
+        <string>¿Quien eres?</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>-10</y>
+         <width>111</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>330</y>
+         <width>126</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{;
+background-color: #0B253A;
+    border-style: outset;
+    border-radius: 15px;
+    border-color: #0B253A;
+    min-width: 6em;;
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+color:white;
+}
+
+QPushButton:Hover{
+	border: 2px solid rgb(77, 188, 198);
+}
+
+QPushButton:focus:pressed{ background-color:white ;
+color: black; }
+</string>
+       </property>
+       <property name="text">
+        <string>Ingresar</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="CodigoID">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>210</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(255, 255, 255, 10);
+font:12pt  &quot;CaviarDreams_BoldItalic&quot;;
+border: 1px solid #0B253A;;
+    border-radius:10px;
+    padding: 0 8px;</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>70</x>
+         <y>10</y>
+         <width>331</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="Img.qrc">:/img/Iconos/logosinfondo1.png</pixmap>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>130</y>
+         <width>443</width>
+         <height>32</height>
+        </rect>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QRadioButton" name="Mesero">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Mesero</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>img/Iconos/Waiter_Male_Light.png</normaloff>
+            <activeoff>:/img/Iconos/Waiter_Male_Light.png</activeoff>
+            <selectedoff>:/img/Iconos/Waiter_Male_Light.png</selectedoff>img/Iconos/Waiter_Male_Light.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="Anfitrion">
+          <property name="text">
+           <string>Anfitrion</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>img/Iconos/Waiter_Male_Dark.png</normaloff>
+            <activeon>:/img/Iconos/Waiter_Male_Dark.png</activeon>
+            <selectedon>:/img/Iconos/Waiter_Male_Dark.png</selectedon>img/Iconos/Waiter_Male_Dark.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="Cocinero">
+          <property name="text">
+           <string>Cocinero</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>img/Iconos/iconfinder_142-man-cook-2_3099395.png</normaloff>
+            <activeon>:/img/Iconos/iconfinder_142-man-cook-2_3099395.png</activeon>
+            <selectedon>:/img/Iconos/iconfinder_142-man-cook-2_3099395.png</selectedon>img/Iconos/iconfinder_142-man-cook-2_3099395.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="Gerente">
+          <property name="text">
+           <string>Gerente</string>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>img/Iconos/iconfinder_person_3_1376034.png</normaloff>
+            <activeon>:/img/Iconos/iconfinder_person_3_1376034.png</activeon>
+            <selectedon>:/img/Iconos/iconfinder_person_3_1376034.png</selectedon>img/Iconos/iconfinder_person_3_1376034.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>30</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2"/>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>554</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="Img.qrc"/>
+ </resources>
+ <connections/>
+</ui>

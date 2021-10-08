@@ -1,0 +1,1335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gerente</class>
+ <widget class="QDialog" name="gerente">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>726</width>
+    <height>463</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-10</y>
+     <width>151</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background-color: #C0C4CF;
+border-right: 1px solid;
+
+}
+</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page">
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  border:0px solid gray;
+  padding: 0 8px;
+  background: yellow;
+background-color: rgba(216, 223, 233,05);
+}
+QPushButton:hover
+{
+	background-color: rgb(223, 138, 19);
+}</string>
+    </property>
+    <widget class="QPushButton" name="Buscar">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>160</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Buscar</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/img/Iconos/lupa.png</normaloff>:/img/Iconos/lupa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Agregar">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>240</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="text">
+      <string>Agregar</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/img/Iconos/anadir.png</normaloff>:/img/Iconos/anadir.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Inventario">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>310</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="text">
+      <string>Inventario</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/img/Iconos/inventario.png</normaloff>:/img/Iconos/inventario.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>422</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  border:0px solid gray;
+  padding: 0 8px;
+  background: yellow;
+background-color: rgba(216, 223, 233,0);
+}
+QPushButton:hover
+{
+	background-color: rgb(223, 138, 19);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/img/Iconos/salida.png</normaloff>:/img/Iconos/salida.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>141</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/img/Iconos/logosinfondo1.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>139</x>
+     <y>-11</y>
+     <width>591</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #faf4ee;</string>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="BuscarUsuario">
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  border:0px solid gray;
+  padding: 0 8px;
+	background-color: rgb(159, 126, 101);
+}
+QPushButton:hover
+{
+	background-color: rgb(223, 138, 19);	
+}
+#page_3
+{
+	background-color: #faf4ee;
+}
+</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>40</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Caviar Dreams</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+     </property>
+     <property name="text">
+      <string>Buscar Usuarios</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>391</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="placeholderText">
+      <string>ID DE EMPLEADO</string>
+     </property>
+     <property name="cursorMoveStyle">
+      <enum>Qt::LogicalMoveStyle</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>340</y>
+       <width>381</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/img/Iconos/hot-cakes-con-miel-y-frutos-rojos.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Editar">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>70</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{
+background-color: rgba(255, 255, 255, 10);}
+
+QPushButton:Hover{
+	background-color: rgb(223, 138, 19);
+}
+
+QPushButton:focus:pressed{ background-color:white ;
+color: black; }</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/img/Iconos/editar.png</normaloff>:/img/Iconos/editar.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>35</width>
+       <height>35</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="tableusuario">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>140</y>
+       <width>541</width>
+       <height>291</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>541</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="mouseTracking">
+      <bool>true</bool>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="acceptDrops">
+      <bool>true</bool>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: white;</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string notr="true">Id</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Nombre</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Apellido paterno</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Apellido materno</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Puesto</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Edad</string>
+      </property>
+     </column>
+    </widget>
+    <zorder>label_4</zorder>
+    <zorder>label_2</zorder>
+    <zorder>lineEdit</zorder>
+    <zorder>Editar</zorder>
+    <zorder>tableusuario</zorder>
+   </widget>
+   <widget class="QWidget" name="EditarUsuario">
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  border:0px solid gray;
+  padding: 0 8px;
+	background-color: rgb(159, 126, 101);
+}
+QPushButton:hover
+{
+	background-color: rgb(223, 138, 19);	
+}
+#page_4
+{
+	background-color: #faf4ee;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>40</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Caviar Dreams</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+     </property>
+     <property name="text">
+      <string>Editar Usuario</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>80</y>
+       <width>491</width>
+       <height>371</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 10);
+border: 1px solid; 
+border-radius: 10px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>110</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Nombre:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>160</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Apellido paterno:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>210</y>
+       <width>131</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Apellido materno:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>260</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Edad:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="puestou">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>400</y>
+       <width>101</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+font:10pt  &quot;CaviarDreams_Italic&quot;;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Cocinero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mesero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Anfitrion</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Gerente</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>410</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Puesto:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="nomusuario">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>99</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="apepaterno">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>150</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="apematerno">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>200</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edadusuario">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>250</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Guardarcambios">
+     <property name="geometry">
+      <rect>
+       <x>380</x>
+       <y>400</y>
+       <width>142</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{;
+background-color: #0B253A;
+    border-style: outset;
+    border-radius: 15px;
+    border-color: #0B253A;
+    min-width: 6em;;
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+color:white;
+}
+
+QPushButton:Hover{
+	border: 2px solid rgb(77, 188, 198);
+}
+
+QPushButton:focus:pressed{ background-color:white ;
+color: black; }</string>
+     </property>
+     <property name="text">
+      <string>Guardar</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>300</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Contraseña nueva:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>360</y>
+       <width>171</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Confirmar contraseña:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="contrasenia1">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>300</y>
+       <width>221</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="contrasenia2">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>350</y>
+       <width>201</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+     <property name="echoMode">
+      <enum>QLineEdit::Password</enum>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="vercontra">
+     <property name="geometry">
+      <rect>
+       <x>480</x>
+       <y>300</y>
+       <width>61</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">  padding: 0 8px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>:/img/Iconos/ojo.png</normaloff>:/img/Iconos/ojo.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>10</y>
+       <width>271</width>
+       <height>111</height>
+      </rect>
+     </property>
+     <property name="focusPolicy">
+      <enum>Qt::NoFocus</enum>
+     </property>
+     <property name="contextMenuPolicy">
+      <enum>Qt::DefaultContextMenu</enum>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::RightToLeft</enum>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/img/Iconos/tostadas-francesas-canela.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <zorder>label_21</zorder>
+    <zorder>label_12</zorder>
+    <zorder>label_13</zorder>
+    <zorder>label_14</zorder>
+    <zorder>label_15</zorder>
+    <zorder>label_16</zorder>
+    <zorder>label_17</zorder>
+    <zorder>puestou</zorder>
+    <zorder>label_18</zorder>
+    <zorder>nomusuario</zorder>
+    <zorder>apepaterno</zorder>
+    <zorder>apematerno</zorder>
+    <zorder>edadusuario</zorder>
+    <zorder>Guardarcambios</zorder>
+    <zorder>label_19</zorder>
+    <zorder>label_20</zorder>
+    <zorder>contrasenia1</zorder>
+    <zorder>contrasenia2</zorder>
+    <zorder>vercontra</zorder>
+   </widget>
+   <widget class="QWidget" name="AgregarUsuario">
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+  border:0px solid gray;
+  padding: 0 8px;
+	background-color: rgb(159, 126, 101);
+}
+QPushButton:hover
+{
+	background-color: rgb(223, 138, 19);	
+}
+#page_5
+{
+	background-color: #faf4ee;
+}</string>
+    </property>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>40</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Caviar Dreams</family>
+       <pointsize>18</pointsize>
+       <weight>50</weight>
+       <italic>true</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255,0);</string>
+     </property>
+     <property name="text">
+      <string>Agregar Usuario</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>290</y>
+       <width>251</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/img/Iconos/pan.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>80</y>
+       <width>521</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgba(255, 255, 255, 10);
+border: 1px solid; 
+border-radius: 10px;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edad">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>260</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="agregarusuario">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>360</y>
+       <width>142</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{;
+background-color: #0B253A;
+    border-style: outset;
+    border-radius: 15px;
+    border-color: #0B253A;
+    min-width: 6em;;
+	font: 12pt &quot;Franklin Gothic Book&quot;;
+color:white;
+}
+
+QPushButton:Hover{
+	border: 2px solid rgb(77, 188, 198);
+}
+
+QPushButton:focus:pressed{ background-color:white ;
+color: black; }
+</string>
+     </property>
+     <property name="text">
+      <string>Agregar</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="nombreusuario">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>110</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>260</y>
+       <width>51</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Edad:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="puestousuario">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>310</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+font:10pt  &quot;CaviarDreams_Italic&quot;;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Cocinero</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Gerente</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Anfitrion</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mesero</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>310</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Puesto:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="apellidop">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>159</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>160</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Apellido paterno:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="apellidom">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>210</y>
+       <width>281</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 1px solid; 
+border-radius: 10px;
+background-color: #faf4ee;
+color:black;</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>111</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Nombre:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>210</y>
+       <width>131</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLabel{
+font:13pt  &quot;CaviarDreams_BoldItalic&quot;;
+}</string>
+     </property>
+     <property name="text">
+      <string>Apellido materno:</string>
+     </property>
+    </widget>
+    <zorder>label_10</zorder>
+    <zorder>label_5</zorder>
+    <zorder>label_3</zorder>
+    <zorder>edad</zorder>
+    <zorder>agregarusuario</zorder>
+    <zorder>nombreusuario</zorder>
+    <zorder>label_8</zorder>
+    <zorder>puestousuario</zorder>
+    <zorder>label_9</zorder>
+    <zorder>apellidop</zorder>
+    <zorder>label_6</zorder>
+    <zorder>apellidom</zorder>
+    <zorder>label_7</zorder>
+    <zorder>label_11</zorder>
+   </widget>
+   <widget class="QWidget" name="Inventario_2">
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+	font: 14pt &quot;Caviar Dreams&quot;;
+	color: rgb(0, 59, 92);
+	backgound-color: none;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	border-bottom: 3px solid rgb(164, 76, 40);
+}
+
+QPushButton:Hover{
+	background-color: #a44c28;
+	color:white;
+border-bottom: 3px solid rgb(255, 255, 255);
+}</string>
+    </property>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>410</x>
+       <y>20</y>
+       <width>161</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Caviar Dreams</family>
+       <pointsize>26</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+	border-bottom: 3px solid rgb(164, 76, 40);
+
+</string>
+     </property>
+     <property name="text">
+      <string>Inventario </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>100</y>
+       <width>111</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Caviar Dreams</family>
+       <pointsize>14</pointsize>
+       <weight>50</weight>
+       <italic>false</italic>
+       <bold>false</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Desayunos </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>100</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Bebidas</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>100</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Postres</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="inventario_Tabla">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>140</y>
+       <width>491</width>
+       <height>251</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>-20</x>
+       <y>340</y>
+       <width>201</width>
+       <height>141</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Caviar Dreams</family>
+       <pointsize>16</pointsize>
+       <italic>true</italic>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>:/img/Iconos/tostadas-francesas-canela.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>410</y>
+       <width>201</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Imprimir Inventario</string>
+     </property>
+    </widget>
+    <zorder>label_23</zorder>
+    <zorder>label_22</zorder>
+    <zorder>pushButton_2</zorder>
+    <zorder>pushButton_3</zorder>
+    <zorder>pushButton_4</zorder>
+    <zorder>inventario_Tabla</zorder>
+    <zorder>pushButton_5</zorder>
+   </widget>
+  </widget>
+  <zorder>stackedWidget_2</zorder>
+  <zorder>stackedWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

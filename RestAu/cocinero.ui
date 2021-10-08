@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>cocinero</class>
+ <widget class="QWidget" name="cocinero">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>723</width>
+    <height>463</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>151</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+background-color: #C0C4CF;
+border-right: 1px solid;
+
+}
+</string>
+   </property>
+   <widget class="QWidget" name="Menu">
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>151</width>
+       <height>81</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="Img.qrc">:/img/Iconos/logosinfondo1.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="salida">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>410</y>
+       <width>151</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  border:0px solid gray;
+  padding: 0 8px;
+  background: yellow;
+background-color: rgba(216, 223, 233,0);
+}
+QPushButton:hover
+{
+	background-color: rgb(223, 138, 19);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/salida.png</normaloff>:/img/Iconos/salida.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Ordenes_Mesas">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>140</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  border:0px solid gray;
+  padding: 0 8px;
+  background: yellow;
+background-color: rgba(216, 223, 233,0);
+}
+QPushButton:hover
+{
+	background-color: rgb(223, 138, 19);
+}</string>
+     </property>
+     <property name="text">
+      <string>Ordenes</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/plato.png</normaloff>:/img/Iconos/plato.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page_2"/>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>151</x>
+     <y>0</y>
+     <width>601</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="ordenes">
+    <widget class="QPushButton" name="Mesa_1">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>CreativeBlock BB</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>1</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/mesa.png</normaloff>:/img/Iconos/mesa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mesa_5">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>130</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>CreativeBlock BB</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>5</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/mesa.png</normaloff>:/img/Iconos/mesa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mesa_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>CreativeBlock BB</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>4</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/mesa.png</normaloff>:/img/Iconos/mesa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mesa_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>CreativeBlock BB</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>3</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/mesa.png</normaloff>:/img/Iconos/mesa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mesa_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>210</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>CreativeBlock BB</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>2</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/mesa.png</normaloff>:/img/Iconos/mesa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mesa_8">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>370</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>CreativeBlock BB</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>8</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/mesa.png</normaloff>:/img/Iconos/mesa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mesa_7">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>290</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>CreativeBlock BB</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>7</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/mesa.png</normaloff>:/img/Iconos/mesa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Mesa_6">
+     <property name="geometry">
+      <rect>
+       <x>160</x>
+       <y>210</y>
+       <width>81</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>CreativeBlock BB</family>
+       <pointsize>24</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>6</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/mesa.png</normaloff>:/img/Iconos/mesa.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>50</width>
+       <height>50</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>581</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>SuckerPunch</family>
+       <pointsize>40</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:#8E5329;</string>
+     </property>
+     <property name="text">
+      <string>Bienvenido a la cocina</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>90</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Restaurant</family>
+       <pointsize>36</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: #FFFFFF;</string>
+     </property>
+     <property name="text">
+      <string>Orden</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>90</y>
+       <width>251</width>
+       <height>361</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="Img.qrc">:/img/Iconos/menu.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="ordenMesa">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>130</y>
+       <width>200</width>
+       <height>260</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="BotonTerminado">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>340</y>
+       <width>91</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton
+{
+  border:0px solid gray;
+  padding: 0 8px;
+  background: yellow;
+background-color: rgba(216, 223, 233,0);
+}
+QPushButton:hover
+{
+	background-color: rgb(223, 138, 19);
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="Img.qrc">
+       <normaloff>:/img/Iconos/terminado.png</normaloff>:/img/Iconos/terminado.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QSpinBox" name="NumeroMesa">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>350</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <zorder>Mesa_1</zorder>
+    <zorder>Mesa_5</zorder>
+    <zorder>Mesa_4</zorder>
+    <zorder>Mesa_3</zorder>
+    <zorder>Mesa_2</zorder>
+    <zorder>Mesa_8</zorder>
+    <zorder>Mesa_7</zorder>
+    <zorder>Mesa_6</zorder>
+    <zorder>label_3</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_4</zorder>
+    <zorder>ordenMesa</zorder>
+    <zorder>BotonTerminado</zorder>
+    <zorder>NumeroMesa</zorder>
+   </widget>
+   <widget class="QWidget" name="page_3"/>
+  </widget>
+ </widget>
+ <resources>
+  <include location="Img.qrc"/>
+ </resources>
+ <connections/>
+</ui>
